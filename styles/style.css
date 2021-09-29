@@ -1,0 +1,55 @@
+/*html covers the whole page */
+html {
+    background-color:rgb(255, 243, 225);
+    font-family: "Roboto Slab", serif;
+}
+
+h1 {
+    font-size:60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+p,li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+.bold {
+    font-weight:bold;
+}
+li.bold {
+    font-style: italic;
+}
+p.bold {
+    text-decoration:underline;
+}
+.spacedletters {
+    letter-spacing:2px;
+}
+
+body {
+    background-color:rgb(225, 234, 255); /*can also use color names or hex color codes*/
+    width:600px;
+    margin:0 auto; /*adds as much as needed?*/
+    padding:0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 70% /* of containing body*/;
+    /* height: auto; */
+}
+
+div.coolbox {
+    display: block;
+    border: lightblue dotted;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+span.language {
+    font-family: 'Courier New', Courier, monospace;
+}
