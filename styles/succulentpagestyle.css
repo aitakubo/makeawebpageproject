@@ -57,13 +57,13 @@ img {
     display: inline-block; 
     width: 100px; 
     border: solid 1px red; 
-    height: 100px;
+    width: 100px;
 }
 .twoblocks {
     display: inline-block; 
     width: 200px; 
     border: solid 1px red; 
-    height: 200px;
+    width: 200px;
 }
 
 span.species {
