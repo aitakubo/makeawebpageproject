@@ -36,11 +36,9 @@ p.bold {
 }
 
 body {
-    background-color:rgb(225, 234, 255); /*can also use color names or hex color codes*/
     width:600px;
     margin:0 auto; /*adds as much as needed?*/
     padding:0 20px 20px 20px;
-    border: 5px solid black;
 }
 
 img {
