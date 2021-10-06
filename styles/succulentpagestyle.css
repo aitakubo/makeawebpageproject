@@ -54,13 +54,13 @@ img {
 }
 
 .fourblocks {
-    display: inline-block; 
+    display: block; 
     width: 100px; 
     border: solid 1px red; 
     width: 100px;
 }
 .twoblocks {
-    display: inline-block; 
+    display: block; 
     width: 200px; 
     border: solid 1px red; 
     width: 200px;
