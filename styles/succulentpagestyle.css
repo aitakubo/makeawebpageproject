@@ -42,14 +42,23 @@ img {
     width: 70% /* of containing body*/;
     /* height: auto; */
 }
-
-div.coolbox {
-    display: block;
-    border: lightblue dotted;
-    padding: 10px 20px;
-    margin: 10px;
+.container { 
+    width: 210px; 
 }
 
-span.language {
-    font-family: 'Courier New', Courier, monospace;
+.fourblocks {
+    display: inline-block; 
+    width: 100px; 
+    border: solid 1px red; 
+    height: 100px;
+}
+.twoblocks {
+    display: inline-block; 
+    width: 200px; 
+    border: solid 1px red; 
+    height: 200px;
+}
+
+span.species {
+    font-weight:bold;
 }
