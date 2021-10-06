@@ -49,21 +49,24 @@ img {
     width: 70% /* of containing body*/;
     /* height: auto; */
 }
-.container { 
-    width: 210px; 
-}
 
-.blocks {
-    display: inline-block; 
-    width: 100px; 
-    border: solid 1px red; 
-    width: 100px;
+.container{
+    margin: 20px auto;
+    width:400px;
+    height:400px;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
-.twoblocks {
-    display: block; 
-    width: 200px; 
-    border: solid 1px red; 
-    width: 200px;
+.box{
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
 }
 
 span.species {
