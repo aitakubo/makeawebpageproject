@@ -1,10 +1,17 @@
 /*html covers the whole page */
 html {
-    background-color:rgb(255, 243, 225);
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto", sans-serif;
 }
+/* fonts
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif;
+font-family: 'Roboto', sans-serif;
+*/
 
 h1 {
+    font-family: 'PT Serif', serif;
     font-size:60px;
     text-align: center;
     margin: 0;
