@@ -52,10 +52,10 @@ img {
 
 .container{
     margin: 20px auto;
-    width:400px;
-    height:400px;
+    width:600px;
+    height:600px;
     display:grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 300px 300px;
     grid-row: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
