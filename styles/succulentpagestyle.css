@@ -53,8 +53,8 @@ img {
     width: 210px; 
 }
 
-.fourblocks {
-    display: block; 
+.blocks {
+    display: inline-block; 
     width: 100px; 
     border: solid 1px red; 
     width: 100px;
