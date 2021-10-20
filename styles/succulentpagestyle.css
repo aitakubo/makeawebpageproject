@@ -50,8 +50,8 @@ img {
 
 .container{
     margin: 20px auto;
-    width:800px;
-    height:800px;
+    width:600px;
+    height:600px;
     display:grid;
     grid-template-columns: 300px 300px;
     grid-row: auto auto;
