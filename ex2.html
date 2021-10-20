@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My To Do List</h1>
+    <input type="text"><button>Add</button>
+    <ul>
+    </ul>
+    <script>
+        function addToList (content){
+            let itemElm = document.createElement("li"); //made an element
+            itemElm.textContent = content;
+            let listElm = document.querySelector("ul"); //set the listElm as the unordered list we made
+            listElm.appendChild(itemElm); //put that made element into the list
+        }
+
+        function getUserItem(){
+            let inputElm = document.querySelector("input"); //sets variable inputElm as the input of when you click the button
+            addToList(inputElm.value);
+            inputElm.value = ""; //clears out the box after adding it
+        }
+
+        let buttonElm = document.querySelector("button"); 
+        buttonElm.onclick = getUserItem; //any time button is clicked, getUserItem() will be run
+        
+    </script>
+</body>
+</html>
