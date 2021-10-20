@@ -34,6 +34,9 @@ p.bold {
 .spacedletters {
     letter-spacing:2px;
 }
+p.captions {
+    padding: 10px 10px;
+}
 
 body {
     width:800px;
