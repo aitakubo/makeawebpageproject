@@ -59,7 +59,6 @@ img {
     grid-row-gap: 20px;
 }
 .box{
-    padding:20px;
     border-radius:10px;
     display:flex;
     align-items:center;
