@@ -64,7 +64,7 @@ img {
 .box{
     border-radius:10px;
     display:flex;
-    align-items:space-evenly;
+    align-items:center;
     justify-content:space-evenly;
     font-size:40px;
 }
