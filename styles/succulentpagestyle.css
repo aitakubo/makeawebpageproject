@@ -37,13 +37,13 @@ p.bold {
 
 body {
     width:800px;
-    margin:0 auto; /*adds as much as needed?*/
+    margin:60 auto; /*adds as much as needed?*/
     padding:0 20px 20px 20px;
 }
 
 img {
     display: block;
-    margin: 0 auto;
+    margin: 20 auto;
     width: 70% /* of containing body*/;
     /* height: auto; */
 }
