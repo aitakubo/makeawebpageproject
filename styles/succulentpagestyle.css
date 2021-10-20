@@ -61,8 +61,8 @@ img {
 .box{
     border-radius:10px;
     display:flex;
-    align-items:center;
-    justify-content:center;
+    align-items:space-evenly;
+    justify-content:space-evenly;
     font-size:40px;
 }
 
