@@ -27,10 +27,43 @@
     </style>
 </head>
 <body>
+    <label>From:</label><input type="number" id="from" min=0 value=1> 
+    <label>To:</label><input type="number" id="to" max=10000 value=100>
+    <label>Count by:</label><input type="number" id="countby" value=1>
+    <button>CREATE</button>
+
+    <hr> 
     <div id="countbox">
 
     </div>
     <script>
+        
+        function createNumbers(){
+            let countbox = document.querySelector("div"); //changing the div element
+            countbox.replaceChildren();//removes all children if you don't say what to replace with
+            let fromInput = document.querySelector("#from");//selects the id
+            let from = Number(fromInput.value); //converting number string to a number number
+            let toInput = document.querySelector("#to");
+            let to = Number(toInput.value);
+            let byInput = document.querySelector("#countby");
+            let by = Number(byInput.value);
+            
+            for (let i = from; i <= to; i += by){
+             let numElm = document.createElement("p"); //makes p element 
+             countbox.appendChild(numElm); //puts numElm into countbox as its child
+             numElm.textContent = i;
+             numElm.addEventListener("click", crossOut);
+            }
+        }
+
+        let button = document.querySelector("button");
+        button.addEventListener("click", createNumbers); //plays createNumbers function when create button is clicked
+
+        function crossOut(event) {
+            let numElm = event.currentTarget; //event.curentTraget refers to what was clicked
+            // not preferred: direct styling : numElm.style.textDecoration = "line-through"; 
+            numElm.classList.add("finished"); //better to change classes to affect styles
+        }
 
     </script>
 </body>
