@@ -21,7 +21,9 @@
 
         function getUserItem(){
             let inputElm = document.querySelector("input"); //sets variable inputElm as the input of when you click the button
-            addToList(inputElm.value);
+            if (inputElm.value){
+                addToList(inputElm.value);
+            }
             inputElm.value = ""; //clears out the box after adding it
         }
 
