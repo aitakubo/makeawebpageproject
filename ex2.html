@@ -21,8 +21,12 @@
 
         function getUserItem(){
             let inputElm = document.querySelector("input"); //sets variable inputElm as the input of when you click the button
+            //only add if its not empty
             if (inputElm.value){
                 addToList(inputElm.value);
+            }
+            else{
+                alert("You can't add a blank item to the list");
             }
             inputElm.value = ""; //clears out the box after adding it
         }
