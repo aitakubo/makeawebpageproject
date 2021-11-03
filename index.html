@@ -13,7 +13,7 @@
     <p>You may have once bought a succulent from Trader Joe's after hearing they're the easiest thing to take care of!<p>
     <p>Only for it to end up in a pile of mush by the end of the week.<p>
     <img src=images/common-signs-of-overwatered-succulents.jpeg alt="over-watered succulent" title="yuck!">
-    <p>Succulents may not be as easy as you might think, but fear not; with the right knowledge, they'll be thriving with minimal maintenance!</p>
+    <p>Succulents are not as easy as you might think, but fear not; with the right knowledge, they'll be thriving with minimal maintenance!</p>
     
     <h2>The 3 Big Rules:</h2>
     <ul>
@@ -27,12 +27,13 @@
 
     <p>Let's talk about how care may differ for different species. Click on the images below to see different types of succulents.</p>
 
+
+
+    <!--
     <div class="container">
         <div class="box">
             <a href="echeverias.html"><img src=images/bigecheveria.png alt="echeveria marron" title="beautiful!"></a>
-            <div>
                 <p class="captions">This is an <span class=species>echeveria marron</span>.</p>
-            </div>  
         </div>
         <div class="box">
             <img src=images/stringofpearls.png alt="string of pearls" title="looks like peas!">
@@ -53,6 +54,58 @@
             </div>
         </div>
       </div>
+    -->
+
+
+    <body class="gallery">
+        <h1 class="gallery">Image gallery example</h1>
+
+        <div class="full-img">
+        <img class="displayed-img" src="images/bigecheveria.png">
+        </div>
+
+        <div class="thumb-bar">
+        </div>
+        <script>
+            let thumbBar = document.querySelector(".thumb-bar")
+            //creates an image elements, adds it to the thumbbar
+
+            let listOfImages = ["bigecheveria", "sempervivum", "stringofpearls", "watchchain", "bear'spaw"] //array of image names
+            
+            listOfImages.forEach(function(imageName) {
+                let imgElm = document.createElement("img");
+                imgElm.src = "images/" + imageName + ".png"
+                thumbBar.appendChild(imgElm);
+            })
+
+                //add eventListener
+                thumbBar.addEventListener("click", function(event) {
+                let bigImage = document.querySelector(".displayed-img");
+                    //event.currentTarget is whatever child element was clicked
+                    bigImage.src = event.target.src; 
+                    //set big image to be same source as clicked small image
+                })
+
+                
+                
+
+        //want to make the big image clickable
+
+      
+    
+        </script>
+</body>
+</html>
+
+</body>
+</html>
+    </div>
+
+
+
+
+</body>
+</html>
     
 </body>
 

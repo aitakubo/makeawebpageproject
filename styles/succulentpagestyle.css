@@ -35,7 +35,9 @@ p.bold {
     letter-spacing:2px;
 }
 p.captions {
-    padding: 10px 10px;
+    padding: 10px;
+    margin: 0;
+    font-size: 15px;
 }
 
 body {
@@ -52,14 +54,17 @@ img {
 }
 
 .container{
-    margin: 10px auto;
+    border: 2px solid black;
+    padding:    10px;
+    font-size: 24px;
+    margin: 5px auto;
     width: 600px;
     height: 600px;
     display:grid;
     grid-template-columns: 300px 300px;
     grid-row: auto auto;
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 5px;
 }
 .box{
     border-radius:10px;
@@ -71,4 +76,37 @@ img {
 
 span.species {
     font-weight:bold;
+}
+
+
+/*gallery formatting*/
+
+h1 {
+    font-family: helvetica, arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.full-img {
+    display: block;
+    width: 640px;
+    height: 480px;
+}
+.thumb-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.thumb-bar img {
+    width: 20%;
+    cursor: pointer; /*turns cursor into pointer like clickable icon*/
+}
+
+/* only applies when hovered over */
+.thumb-bar img:hover {
+    opacity:0.5
 }
