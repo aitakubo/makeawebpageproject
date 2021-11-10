@@ -41,7 +41,7 @@ p.captions {
 }
 
 body {
-    width:800px;
+    width:1400px;
     margin:0 auto; /*adds as much as needed?*/
     padding:0 20px 20px 20px;
 }
@@ -81,12 +81,13 @@ span.species {
 
 /*gallery formatting*/
 
-h1 {
-    font-family: helvetica, arial, sans-serif;
+h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 20;
     text-align: center;
 }
 
-body {
+body.gallery {
     width: 640px;
     margin: 0 auto;
 }
