@@ -65,15 +65,23 @@
     <script>
     //add in code that'll change the big image to image in question
     function miniQuiz(){
+        let count = 0;
         for (let imgnumber = 1; imgnumber <=4; imgnumber++){
             let answer = prompt("Image " + imgnumber + " is ?");
             if(answer === listOfImages[imgnumber-1]){
                 alert("Correct!");
+                count++;
             }
             else{
-              alert("Wrong! The answer is "+ listOfImages[imgnumber-1]);
+              alert("Wrong! The answer is "+ listOfImages[imgnumber-1] +".");
             }
 
+        }
+        if(count>2){
+            alert("Good job! You got " + count + "/4 right.");
+        }
+        else{
+            alert("You got " + count + "/4 right.");
         }
 
     }
