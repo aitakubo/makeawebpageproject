@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>New Page</title>
+    <style>
+        p {
+            font-family: 'Great Vibes', cursive; 
+        }
+    </style>
 </head>
 <body>
     
@@ -17,7 +22,7 @@
         body.appendChild(newElm);
 
         if (urlSearchParams.get("message") == "blue"){
-            let description = document.createElement('h1');
+            let description = document.createElement('p');
             description.textContent = "blue is refreshing and calm like clear skies";
             body.appendChild(description);
             let img = document.createElement('img');
