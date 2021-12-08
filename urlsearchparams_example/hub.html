@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="branch.html?message=blue">Page with everything blue!</a>
+    <a href="branch.html?message=red">Page of red!</a>
+    <a href="branch.html?message=green">Page with green things!</a>
+    <div></div>
+    <input type="text"><button>"Create" Page</button>
+
+    <script>
+        document.querySelector("button").onclick = function() {
+            let m = document.querySelector('input').value;
+            //immediate redirect
+            window.location.href = "branch.html?message=" + m; 
+        }
+    </script>
+</body>
+</html>

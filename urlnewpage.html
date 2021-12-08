@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        let m = urlSearchParams.get("message");
+        let body = document.querySelector("body");
+        let newElm = document.createElement('h1');
+        newElm.textContent = m + "so cool";
+        body.appendChild(newElm);
+        
+        if (urlSearchParams.get("message") == "blue"){
+            let description = document.createElement('h1');
+            description.textContent = "blue is refreshing and calm like clear skies";
+            body.appendChild(description);
+        }
+
+    </script>
+</body>
+</html>
