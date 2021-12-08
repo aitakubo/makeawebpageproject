@@ -33,6 +33,22 @@
             img.src = images/blueskies.jpeg;
             body.appendChild(img);
         }
+        if (urlSearchParams.get("message") == "red"){
+            let description = document.createElement('p');
+            description.textContent = "red is bold and fierce like blazing sunsets";
+            body.appendChild(description);
+            let img = document.createElement('img');
+            img.src = images/redsunset.jpeg;
+            body.appendChild(img);
+        }
+        if (urlSearchParams.get("message") == "green"){
+            let description = document.createElement('p');
+            description.textContent = "green is vivid and rich like lush forests";
+            body.appendChild(description);
+            let img = document.createElement('img');
+            img.src = images/greenleaves.jpeg;
+            body.appendChild(img);
+        }
     </script>
 </body>
 </html>
