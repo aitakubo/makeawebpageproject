@@ -15,6 +15,14 @@
         let newElm = document.createElement('h1');
         newElm.textContent = m;
         body.appendChild(newElm);
+
+        if (urlSearchParams.get("message") == "blue"){
+            let description = document.createElement('h1');
+            description.textContent = "blue is refreshing and calm like clear skies";
+            body.appendChild(description);
+            //let image = document.createElement('img');
+            //img.textContent = images/blueskies.jpeg;
+        }
     </script>
 </body>
 </html>
